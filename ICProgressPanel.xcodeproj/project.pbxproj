@@ -36,6 +36,10 @@
 		1C91499516817003005D7004 /* upload-progressbarGlow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498D16817003005D7004 /* upload-progressbarGlow@2x.png */; };
 		1C91499716817B7F005D7004 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C91499616817B7F005D7004 /* README.md */; };
 		1C91499916817D94005D7004 /* ICProgressPanel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1C91499816817D94005D7004 /* ICProgressPanel.podspec */; };
+		1C9149C5168198C6005D7004 /* upload-photoBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C1168198C6005D7004 /* upload-photoBg.png */; };
+		1C9149C6168198C6005D7004 /* upload-photoBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C2168198C6005D7004 /* upload-photoBg@2x.png */; };
+		1C9149C7168198C6005D7004 /* upload-progressbarBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C3168198C6005D7004 /* upload-progressbarBg.png */; };
+		1C9149C8168198C6005D7004 /* upload-progressbarBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C4168198C6005D7004 /* upload-progressbarBg@2x.png */; };
 		76C8ABFD2EBF4B61AF22B693 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB597E07490E4E158EA81CBD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -86,6 +90,10 @@
 		1C91498D16817003005D7004 /* upload-progressbarGlow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbarGlow@2x.png"; sourceTree = "<group>"; };
 		1C91499616817B7F005D7004 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		1C91499816817D94005D7004 /* ICProgressPanel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ICProgressPanel.podspec; sourceTree = SOURCE_ROOT; };
+		1C9149C1168198C6005D7004 /* upload-photoBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-photoBg.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-photoBg.png"; sourceTree = "<group>"; };
+		1C9149C2168198C6005D7004 /* upload-photoBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-photoBg@2x.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-photoBg@2x.png"; sourceTree = "<group>"; };
+		1C9149C3168198C6005D7004 /* upload-progressbarBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-progressbarBg.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-progressbarBg.png"; sourceTree = "<group>"; };
+		1C9149C4168198C6005D7004 /* upload-progressbarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-progressbarBg@2x.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-progressbarBg@2x.png"; sourceTree = "<group>"; };
 		E94583132AEA40BF850D1F8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EB597E07490E4E158EA81CBD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,6 +228,10 @@
 				1C91498B16817003005D7004 /* upload-progressbar@2x.png */,
 				1C91498C16817003005D7004 /* upload-progressbarGlow.png */,
 				1C91498D16817003005D7004 /* upload-progressbarGlow@2x.png */,
+				1C9149C1168198C6005D7004 /* upload-photoBg.png */,
+				1C9149C2168198C6005D7004 /* upload-photoBg@2x.png */,
+				1C9149C3168198C6005D7004 /* upload-progressbarBg.png */,
+				1C9149C4168198C6005D7004 /* upload-progressbarBg@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -312,6 +324,10 @@
 				1C91499516817003005D7004 /* upload-progressbarGlow@2x.png in Resources */,
 				1C91499716817B7F005D7004 /* README.md in Resources */,
 				1C91499916817D94005D7004 /* ICProgressPanel.podspec in Resources */,
+				1C9149C5168198C6005D7004 /* upload-photoBg.png in Resources */,
+				1C9149C6168198C6005D7004 /* upload-photoBg@2x.png in Resources */,
+				1C9149C7168198C6005D7004 /* upload-progressbarBg.png in Resources */,
+				1C9149C8168198C6005D7004 /* upload-progressbarBg@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

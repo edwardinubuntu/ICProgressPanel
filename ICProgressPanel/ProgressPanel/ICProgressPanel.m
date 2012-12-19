@@ -30,9 +30,11 @@ CGFloat panelWidth = 320;
       [self.progressImageViews addObject:progressView];
     }
     
-    self.backgroundColor = [UIColor lightGrayColor];
+    self.backgroundColor = [UIColor clearColor];    UIImageView *backgroundImageView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"upload-progressbarBg"] resizableImageWithCapInsets:UIEdgeInsetsMake(5, 5, 5, 5)] ];
+    backgroundImageView.frame = CGRectMake(0, 0, panelWidth, panelHeight);
+    [self addSubview:backgroundImageView];
     
-    CGFloat left = 55;
+    CGFloat left = 57;
     NSInteger count = 0;
     for (UIImageView *progressView in self.progressImageViews) {
       progressView.center = CGPointMake(left + 24 * count, panelHeight / 2);
@@ -139,12 +141,15 @@ CGFloat panelWidth = 320;
   [panel addSubview:panel.doneButton];
   
   UIEdgeInsets recipeBackgroundImageViewInsets = UIEdgeInsetsMake(8, 8, 8, 8);
-  UIImageView *iconShadowView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"Recommand-recipeIconShadow"] resizableImageWithCapInsets:recipeBackgroundImageViewInsets]];
-  iconShadowView.frame = CGRectMake(0, 0, 28, 28);
-  [panel.thumbImageView addSubview:iconShadowView];
-  panel.thumbImageView.frame = iconShadowView.frame;
-  panel.thumbImageView.center = CGPointMake(24, panelHeight / 2);
-  [panel addSubview:panel.thumbImageView];
+  UIImageView *iconShadowView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"upload-photoBg"] resizableImageWithCapInsets:recipeBackgroundImageViewInsets]];
+  [iconShadowView sizeToFit];
+  iconShadowView.center = CGPointMake(24, panelHeight / 2);
+  
+  
+  panel.thumbImageView.frame = CGRectMake((iconShadowView.frame.size.width - 24) / 2, (iconShadowView.frame.size.width - 24) / 2, 24, 24);
+  
+  [iconShadowView addSubview:panel.thumbImageView];
+  [panel addSubview:iconShadowView];
 
   [view addSubview:panel];
   
