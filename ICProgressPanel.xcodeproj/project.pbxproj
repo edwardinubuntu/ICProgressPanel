@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C857DCE1685745A00AAC2E7 /* upload-delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC21685745A00AAC2E7 /* upload-delete.png */; };
+		1C857DCF1685745A00AAC2E7 /* upload-delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC31685745A00AAC2E7 /* upload-delete@2x.png */; };
+		1C857DD01685745A00AAC2E7 /* upload-finished.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC41685745A00AAC2E7 /* upload-finished.png */; };
+		1C857DD11685745A00AAC2E7 /* upload-finished@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC51685745A00AAC2E7 /* upload-finished@2x.png */; };
+		1C857DD21685745A00AAC2E7 /* upload-photoBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC61685745A00AAC2E7 /* upload-photoBg.png */; };
+		1C857DD31685745A00AAC2E7 /* upload-photoBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC71685745A00AAC2E7 /* upload-photoBg@2x.png */; };
+		1C857DD41685745A00AAC2E7 /* upload-progressbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC81685745A00AAC2E7 /* upload-progressbar.png */; };
+		1C857DD51685745A00AAC2E7 /* upload-progressbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC91685745A00AAC2E7 /* upload-progressbar@2x.png */; };
+		1C857DD61685745A00AAC2E7 /* upload-progressbarBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DCA1685745A00AAC2E7 /* upload-progressbarBg.png */; };
+		1C857DD71685745A00AAC2E7 /* upload-progressbarBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DCB1685745A00AAC2E7 /* upload-progressbarBg@2x.png */; };
+		1C857DD81685745A00AAC2E7 /* upload-progressbarGlow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DCC1685745A00AAC2E7 /* upload-progressbarGlow.png */; };
+		1C857DD91685745A00AAC2E7 /* upload-progressbarGlow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DCD1685745A00AAC2E7 /* upload-progressbarGlow@2x.png */; };
 		1C91493E16816519005D7004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C91493D16816519005D7004 /* UIKit.framework */; };
 		1C91494016816519005D7004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C91493F16816519005D7004 /* Foundation.framework */; };
 		1C91494216816519005D7004 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C91494116816519005D7004 /* CoreGraphics.framework */; };
@@ -26,20 +38,8 @@
 		1C91497E16816730005D7004 /* ICProgressPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C91497D16816730005D7004 /* ICProgressPanel.m */; };
 		1C91498216816D9C005D7004 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C91498116816D9C005D7004 /* QuartzCore.framework */; };
 		1C91498416816F37005D7004 /* IMG_6682.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498316816F37005D7004 /* IMG_6682.png */; };
-		1C91498E16817003005D7004 /* upload-delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498616817003005D7004 /* upload-delete.png */; };
-		1C91498F16817003005D7004 /* upload-delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498716817003005D7004 /* upload-delete@2x.png */; };
-		1C91499016817003005D7004 /* upload-finished.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498816817003005D7004 /* upload-finished.png */; };
-		1C91499116817003005D7004 /* upload-finished@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498916817003005D7004 /* upload-finished@2x.png */; };
-		1C91499216817003005D7004 /* upload-progressbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498A16817003005D7004 /* upload-progressbar.png */; };
-		1C91499316817003005D7004 /* upload-progressbar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498B16817003005D7004 /* upload-progressbar@2x.png */; };
-		1C91499416817003005D7004 /* upload-progressbarGlow.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498C16817003005D7004 /* upload-progressbarGlow.png */; };
-		1C91499516817003005D7004 /* upload-progressbarGlow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498D16817003005D7004 /* upload-progressbarGlow@2x.png */; };
 		1C91499716817B7F005D7004 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C91499616817B7F005D7004 /* README.md */; };
 		1C91499916817D94005D7004 /* ICProgressPanel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1C91499816817D94005D7004 /* ICProgressPanel.podspec */; };
-		1C9149C5168198C6005D7004 /* upload-photoBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C1168198C6005D7004 /* upload-photoBg.png */; };
-		1C9149C6168198C6005D7004 /* upload-photoBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C2168198C6005D7004 /* upload-photoBg@2x.png */; };
-		1C9149C7168198C6005D7004 /* upload-progressbarBg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C3168198C6005D7004 /* upload-progressbarBg.png */; };
-		1C9149C8168198C6005D7004 /* upload-progressbarBg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149C4168198C6005D7004 /* upload-progressbarBg@2x.png */; };
 		76C8ABFD2EBF4B61AF22B693 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB597E07490E4E158EA81CBD /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +54,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C857DC21685745A00AAC2E7 /* upload-delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-delete.png"; sourceTree = "<group>"; };
+		1C857DC31685745A00AAC2E7 /* upload-delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-delete@2x.png"; sourceTree = "<group>"; };
+		1C857DC41685745A00AAC2E7 /* upload-finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-finished.png"; sourceTree = "<group>"; };
+		1C857DC51685745A00AAC2E7 /* upload-finished@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-finished@2x.png"; sourceTree = "<group>"; };
+		1C857DC61685745A00AAC2E7 /* upload-photoBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-photoBg.png"; sourceTree = "<group>"; };
+		1C857DC71685745A00AAC2E7 /* upload-photoBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-photoBg@2x.png"; sourceTree = "<group>"; };
+		1C857DC81685745A00AAC2E7 /* upload-progressbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbar.png"; sourceTree = "<group>"; };
+		1C857DC91685745A00AAC2E7 /* upload-progressbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbar@2x.png"; sourceTree = "<group>"; };
+		1C857DCA1685745A00AAC2E7 /* upload-progressbarBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbarBg.png"; sourceTree = "<group>"; };
+		1C857DCB1685745A00AAC2E7 /* upload-progressbarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbarBg@2x.png"; sourceTree = "<group>"; };
+		1C857DCC1685745A00AAC2E7 /* upload-progressbarGlow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbarGlow.png"; sourceTree = "<group>"; };
+		1C857DCD1685745A00AAC2E7 /* upload-progressbarGlow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbarGlow@2x.png"; sourceTree = "<group>"; };
 		1C91493A16816519005D7004 /* ICProgressPanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ICProgressPanel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C91493D16816519005D7004 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		1C91493F16816519005D7004 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -80,20 +92,8 @@
 		1C91497D16816730005D7004 /* ICProgressPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICProgressPanel.m; sourceTree = "<group>"; };
 		1C91498116816D9C005D7004 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		1C91498316816F37005D7004 /* IMG_6682.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6682.png; sourceTree = "<group>"; };
-		1C91498616817003005D7004 /* upload-delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-delete.png"; sourceTree = "<group>"; };
-		1C91498716817003005D7004 /* upload-delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-delete@2x.png"; sourceTree = "<group>"; };
-		1C91498816817003005D7004 /* upload-finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-finished.png"; sourceTree = "<group>"; };
-		1C91498916817003005D7004 /* upload-finished@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-finished@2x.png"; sourceTree = "<group>"; };
-		1C91498A16817003005D7004 /* upload-progressbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbar.png"; sourceTree = "<group>"; };
-		1C91498B16817003005D7004 /* upload-progressbar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbar@2x.png"; sourceTree = "<group>"; };
-		1C91498C16817003005D7004 /* upload-progressbarGlow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbarGlow.png"; sourceTree = "<group>"; };
-		1C91498D16817003005D7004 /* upload-progressbarGlow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-progressbarGlow@2x.png"; sourceTree = "<group>"; };
 		1C91499616817B7F005D7004 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		1C91499816817D94005D7004 /* ICProgressPanel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ICProgressPanel.podspec; sourceTree = SOURCE_ROOT; };
-		1C9149C1168198C6005D7004 /* upload-photoBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-photoBg.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-photoBg.png"; sourceTree = "<group>"; };
-		1C9149C2168198C6005D7004 /* upload-photoBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-photoBg@2x.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-photoBg@2x.png"; sourceTree = "<group>"; };
-		1C9149C3168198C6005D7004 /* upload-progressbarBg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-progressbarBg.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-progressbarBg.png"; sourceTree = "<group>"; };
-		1C9149C4168198C6005D7004 /* upload-progressbarBg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "upload-progressbarBg@2x.png"; path = "../../../polydice/iCook-iOS/Pods/ICProgressPanel/ICProgressPanel/Images/upload-progressbarBg@2x.png"; sourceTree = "<group>"; };
 		E94583132AEA40BF850D1F8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EB597E07490E4E158EA81CBD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -220,18 +220,18 @@
 		1C91498516817003005D7004 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				1C91498616817003005D7004 /* upload-delete.png */,
-				1C91498716817003005D7004 /* upload-delete@2x.png */,
-				1C91498816817003005D7004 /* upload-finished.png */,
-				1C91498916817003005D7004 /* upload-finished@2x.png */,
-				1C91498A16817003005D7004 /* upload-progressbar.png */,
-				1C91498B16817003005D7004 /* upload-progressbar@2x.png */,
-				1C91498C16817003005D7004 /* upload-progressbarGlow.png */,
-				1C91498D16817003005D7004 /* upload-progressbarGlow@2x.png */,
-				1C9149C1168198C6005D7004 /* upload-photoBg.png */,
-				1C9149C2168198C6005D7004 /* upload-photoBg@2x.png */,
-				1C9149C3168198C6005D7004 /* upload-progressbarBg.png */,
-				1C9149C4168198C6005D7004 /* upload-progressbarBg@2x.png */,
+				1C857DC21685745A00AAC2E7 /* upload-delete.png */,
+				1C857DC31685745A00AAC2E7 /* upload-delete@2x.png */,
+				1C857DC41685745A00AAC2E7 /* upload-finished.png */,
+				1C857DC51685745A00AAC2E7 /* upload-finished@2x.png */,
+				1C857DC61685745A00AAC2E7 /* upload-photoBg.png */,
+				1C857DC71685745A00AAC2E7 /* upload-photoBg@2x.png */,
+				1C857DC81685745A00AAC2E7 /* upload-progressbar.png */,
+				1C857DC91685745A00AAC2E7 /* upload-progressbar@2x.png */,
+				1C857DCA1685745A00AAC2E7 /* upload-progressbarBg.png */,
+				1C857DCB1685745A00AAC2E7 /* upload-progressbarBg@2x.png */,
+				1C857DCC1685745A00AAC2E7 /* upload-progressbarGlow.png */,
+				1C857DCD1685745A00AAC2E7 /* upload-progressbarGlow@2x.png */,
 			);
 			path = Images;
 			sourceTree = "<group>";
@@ -314,20 +314,20 @@
 				1C9149541681651A005D7004 /* Default-568h@2x.png in Resources */,
 				1C9149571681651A005D7004 /* MainStoryboard.storyboard in Resources */,
 				1C91498416816F37005D7004 /* IMG_6682.png in Resources */,
-				1C91498E16817003005D7004 /* upload-delete.png in Resources */,
-				1C91498F16817003005D7004 /* upload-delete@2x.png in Resources */,
-				1C91499016817003005D7004 /* upload-finished.png in Resources */,
-				1C91499116817003005D7004 /* upload-finished@2x.png in Resources */,
-				1C91499216817003005D7004 /* upload-progressbar.png in Resources */,
-				1C91499316817003005D7004 /* upload-progressbar@2x.png in Resources */,
-				1C91499416817003005D7004 /* upload-progressbarGlow.png in Resources */,
-				1C91499516817003005D7004 /* upload-progressbarGlow@2x.png in Resources */,
 				1C91499716817B7F005D7004 /* README.md in Resources */,
 				1C91499916817D94005D7004 /* ICProgressPanel.podspec in Resources */,
-				1C9149C5168198C6005D7004 /* upload-photoBg.png in Resources */,
-				1C9149C6168198C6005D7004 /* upload-photoBg@2x.png in Resources */,
-				1C9149C7168198C6005D7004 /* upload-progressbarBg.png in Resources */,
-				1C9149C8168198C6005D7004 /* upload-progressbarBg@2x.png in Resources */,
+				1C857DCE1685745A00AAC2E7 /* upload-delete.png in Resources */,
+				1C857DCF1685745A00AAC2E7 /* upload-delete@2x.png in Resources */,
+				1C857DD01685745A00AAC2E7 /* upload-finished.png in Resources */,
+				1C857DD11685745A00AAC2E7 /* upload-finished@2x.png in Resources */,
+				1C857DD21685745A00AAC2E7 /* upload-photoBg.png in Resources */,
+				1C857DD31685745A00AAC2E7 /* upload-photoBg@2x.png in Resources */,
+				1C857DD41685745A00AAC2E7 /* upload-progressbar.png in Resources */,
+				1C857DD51685745A00AAC2E7 /* upload-progressbar@2x.png in Resources */,
+				1C857DD61685745A00AAC2E7 /* upload-progressbarBg.png in Resources */,
+				1C857DD71685745A00AAC2E7 /* upload-progressbarBg@2x.png in Resources */,
+				1C857DD81685745A00AAC2E7 /* upload-progressbarGlow.png in Resources */,
+				1C857DD91685745A00AAC2E7 /* upload-progressbarGlow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
