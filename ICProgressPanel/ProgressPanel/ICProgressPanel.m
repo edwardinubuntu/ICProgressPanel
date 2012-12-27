@@ -110,6 +110,7 @@ CGFloat panelWidth = 320;
   } else {
     [self.waitingView stopAnimating];
     self.cancelButton.hidden = NO;
+    self.doneButton.hidden = YES;
   }
   
   if (self.isLoading && self.frame.origin.y < 0) {

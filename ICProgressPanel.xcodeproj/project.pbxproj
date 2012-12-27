@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C315BC3168C78BF00C3F527 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C315BC2168C78BF00C3F527 /* MainStoryboard.storyboard */; };
 		1C857DCE1685745A00AAC2E7 /* upload-delete.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC21685745A00AAC2E7 /* upload-delete.png */; };
 		1C857DCF1685745A00AAC2E7 /* upload-delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC31685745A00AAC2E7 /* upload-delete@2x.png */; };
 		1C857DD01685745A00AAC2E7 /* upload-finished.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C857DC41685745A00AAC2E7 /* upload-finished.png */; };
@@ -28,7 +29,6 @@
 		1C91495016816519005D7004 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91494F16816519005D7004 /* Default.png */; };
 		1C9149521681651A005D7004 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91495116816519005D7004 /* Default@2x.png */; };
 		1C9149541681651A005D7004 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149531681651A005D7004 /* Default-568h@2x.png */; };
-		1C9149571681651A005D7004 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C9149551681651A005D7004 /* MainStoryboard.storyboard */; };
 		1C9149621681651A005D7004 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C9149611681651A005D7004 /* SenTestingKit.framework */; };
 		1C9149631681651A005D7004 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C91493D16816519005D7004 /* UIKit.framework */; };
 		1C9149641681651A005D7004 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C91493F16816519005D7004 /* Foundation.framework */; };
@@ -54,6 +54,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C315BC2168C78BF00C3F527 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1C857DC21685745A00AAC2E7 /* upload-delete.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-delete.png"; sourceTree = "<group>"; };
 		1C857DC31685745A00AAC2E7 /* upload-delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-delete@2x.png"; sourceTree = "<group>"; };
 		1C857DC41685745A00AAC2E7 /* upload-finished.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "upload-finished.png"; sourceTree = "<group>"; };
@@ -79,7 +80,6 @@
 		1C91494F16816519005D7004 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		1C91495116816519005D7004 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		1C9149531681651A005D7004 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1C9149561681651A005D7004 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		1C9149601681651A005D7004 /* ICProgressPanelTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ICProgressPanelTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C9149611681651A005D7004 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		1C9149691681651A005D7004 /* ICProgressPanelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ICProgressPanelTests-Info.plist"; sourceTree = "<group>"; };
@@ -163,7 +163,7 @@
 				1C91497B16816730005D7004 /* ProgressPanel */,
 				1C91494C16816519005D7004 /* AppDelegate.h */,
 				1C91494D16816519005D7004 /* AppDelegate.m */,
-				1C9149551681651A005D7004 /* MainStoryboard.storyboard */,
+				1C315BC2168C78BF00C3F527 /* MainStoryboard.storyboard */,
 				1C914978168166A3005D7004 /* ICDemoViewController.h */,
 				1C914979168166A3005D7004 /* ICDemoViewController.m */,
 				1C91494416816519005D7004 /* Supporting Files */,
@@ -312,7 +312,6 @@
 				1C91495016816519005D7004 /* Default.png in Resources */,
 				1C9149521681651A005D7004 /* Default@2x.png in Resources */,
 				1C9149541681651A005D7004 /* Default-568h@2x.png in Resources */,
-				1C9149571681651A005D7004 /* MainStoryboard.storyboard in Resources */,
 				1C91498416816F37005D7004 /* IMG_6682.png in Resources */,
 				1C91499716817B7F005D7004 /* README.md in Resources */,
 				1C91499916817D94005D7004 /* ICProgressPanel.podspec in Resources */,
@@ -328,6 +327,7 @@
 				1C857DD71685745A00AAC2E7 /* upload-progressbarBg@2x.png in Resources */,
 				1C857DD81685745A00AAC2E7 /* upload-progressbarGlow.png in Resources */,
 				1C857DD91685745A00AAC2E7 /* upload-progressbarGlow@2x.png in Resources */,
+				1C315BC3168C78BF00C3F527 /* MainStoryboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,14 +410,6 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1C9149551681651A005D7004 /* MainStoryboard.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C9149561681651A005D7004 /* en */,
-			);
-			name = MainStoryboard.storyboard;
-			sourceTree = "<group>";
-		};
 		1C91496A1681651A005D7004 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -454,7 +446,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -478,7 +470,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
