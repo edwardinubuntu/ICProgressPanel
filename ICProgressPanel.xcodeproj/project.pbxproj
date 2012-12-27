@@ -40,7 +40,6 @@
 		1C91498416816F37005D7004 /* IMG_6682.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C91498316816F37005D7004 /* IMG_6682.png */; };
 		1C91499716817B7F005D7004 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C91499616817B7F005D7004 /* README.md */; };
 		1C91499916817D94005D7004 /* ICProgressPanel.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 1C91499816817D94005D7004 /* ICProgressPanel.podspec */; };
-		76C8ABFD2EBF4B61AF22B693 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EB597E07490E4E158EA81CBD /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,7 +93,6 @@
 		1C91498316816F37005D7004 /* IMG_6682.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IMG_6682.png; sourceTree = "<group>"; };
 		1C91499616817B7F005D7004 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		1C91499816817D94005D7004 /* ICProgressPanel.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ICProgressPanel.podspec; sourceTree = SOURCE_ROOT; };
-		E94583132AEA40BF850D1F8D /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		EB597E07490E4E158EA81CBD /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -107,7 +105,6 @@
 				1C91493E16816519005D7004 /* UIKit.framework in Frameworks */,
 				1C91494016816519005D7004 /* Foundation.framework in Frameworks */,
 				1C91494216816519005D7004 /* CoreGraphics.framework in Frameworks */,
-				76C8ABFD2EBF4B61AF22B693 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +128,6 @@
 				1C9149671681651A005D7004 /* ICProgressPanelTests */,
 				1C91493C16816519005D7004 /* Frameworks */,
 				1C91493B16816519005D7004 /* Products */,
-				E94583132AEA40BF850D1F8D /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -246,7 +242,6 @@
 				1C91493616816519005D7004 /* Sources */,
 				1C91493716816519005D7004 /* Frameworks */,
 				1C91493816816519005D7004 /* Resources */,
-				B9D9DFCABDDC459AA427B61C /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -354,20 +349,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
-		};
-		B9D9DFCABDDC459AA427B61C /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -479,7 +460,6 @@
 		};
 		1C9149731681651A005D7004 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E94583132AEA40BF850D1F8D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ICProgressPanel/ICProgressPanel-Prefix.pch";
@@ -491,7 +471,6 @@
 		};
 		1C9149741681651A005D7004 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E94583132AEA40BF850D1F8D /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ICProgressPanel/ICProgressPanel-Prefix.pch";

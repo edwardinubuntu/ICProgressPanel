@@ -7,8 +7,6 @@
 //
 
 #import "ICProgressPanel.h"
-#import <QuartzCore/QuartzCore.h>
-#import "UIControl+BlocksKit.h"
 
 @implementation ICProgressPanel
 
@@ -118,28 +116,34 @@ CGFloat panelWidth = 320;
   }
 }
 
-+ (ICProgressPanel *)showPanelInView:(UIView *)view didFinishLoad:(progressDidFinishLoadBlock)finishBlock cancel:(progressDidFinishLoadBlock)cancelBlock {
-  
-  ICProgressPanel *panel = [ICProgressPanel sharedInstance];
+- (void)cancelUpload:(id)sender {
+  if (_delegate && [_delegate respondsToSelector:@selector(progressPanelDidCancelLoad:)]) {
+    [_delegate progressPanelDidCancelLoad:self];
+  }
+}
 
-  [panel.cancelButton addEventHandler:^(id sender) {
-    cancelBlock();
-  } forControlEvents:UIControlEventTouchUpInside];
-  panel.cancelButton.hidden = NO;
+- (void)finishUpload:(id)sender {
+  if (_delegate && [_delegate respondsToSelector:@selector(progressPanelDidFinishLoad:)]) {
+    [_delegate progressPanelDidFinishLoad:self];
+  }
+}
+
+- (void)showPanelInView:(UIView *)view {
+
+  [self.cancelButton addTarget:self action:@selector(cancelUpload:) forControlEvents:UIControlEventTouchUpInside];
+  self.cancelButton.hidden = NO;
   
-  [panel.cancelButton setImage:[UIImage imageNamed:@"upload-delete"] forState:UIControlStateNormal];
-  [panel.cancelButton sizeToFit];
-  panel.cancelButton.center = CGPointMake(panelWidth - 18, panelHeight / 2);
-  [panel addSubview:panel.cancelButton];
+  [self.cancelButton setImage:[UIImage imageNamed:@"upload-delete"] forState:UIControlStateNormal];
+  [self.cancelButton sizeToFit];
+  self.cancelButton.center = CGPointMake(panelWidth - 18, panelHeight / 2);
+  [self addSubview:self.cancelButton];
   
-  [panel.doneButton setImage:[UIImage imageNamed:@"upload-finished"] forState:UIControlStateNormal];
-  [panel.doneButton addEventHandler:^(id sender) {
-    finishBlock();
-  } forControlEvents:UIControlEventTouchUpInside];
-  panel.doneButton.hidden = YES;
-  [panel.doneButton sizeToFit];
-  panel.doneButton.center = CGPointMake(panelWidth - 18, panelHeight / 2);
-  [panel addSubview:panel.doneButton];
+  [self.doneButton setImage:[UIImage imageNamed:@"upload-finished"] forState:UIControlStateNormal];
+  [self.doneButton addTarget:self action:@selector(finishUpload:) forControlEvents:UIControlEventTouchUpInside];
+  self.doneButton.hidden = YES;
+  [self.doneButton sizeToFit];
+  self.doneButton.center = CGPointMake(panelWidth - 18, panelHeight / 2);
+  [self addSubview:self.doneButton];
   
   UIEdgeInsets recipeBackgroundImageViewInsets = UIEdgeInsetsMake(8, 8, 8, 8);
   UIImageView *iconShadowView = [[UIImageView alloc] initWithImage:[[UIImage imageNamed:@"upload-photoBg"] resizableImageWithCapInsets:recipeBackgroundImageViewInsets]];
@@ -147,14 +151,12 @@ CGFloat panelWidth = 320;
   iconShadowView.center = CGPointMake(24, panelHeight / 2);
   
   
-  panel.thumbImageView.frame = CGRectMake((iconShadowView.frame.size.width - 24) / 2, (iconShadowView.frame.size.width - 24) / 2, 24, 24);
+  self.thumbImageView.frame = CGRectMake((iconShadowView.frame.size.width - 24) / 2, (iconShadowView.frame.size.width - 24) / 2, 24, 24);
   
-  [iconShadowView addSubview:panel.thumbImageView];
-  [panel addSubview:iconShadowView];
+  [iconShadowView addSubview:self.thumbImageView];
+  [self addSubview:iconShadowView];
 
-  [view addSubview:panel];
-  
-  return panel;
+  [view addSubview:self];
 }
 
 - (void)hide {

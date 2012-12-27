@@ -16,11 +16,8 @@
  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-
 #import <UIKit/UIKit.h>
-
-typedef void(^progressDidFinishLoadBlock)(void);
-typedef void(^progressDidCancelLoadBlock)(void);
+#import <QuartzCore/QuartzCore.h>
 
 @interface ICProgressPanel : UIView
 
@@ -30,9 +27,10 @@ typedef void(^progressDidCancelLoadBlock)(void);
 @property (nonatomic, strong) UIButton *doneButton;
 @property (nonatomic, strong) NSMutableArray *progressImageViews;
 @property (nonatomic, strong) UIActivityIndicatorView *waitingView;
+@property (nonatomic, assign) id delegate;
 
 
-+ (ICProgressPanel *)showPanelInView:(UIView *)view didFinishLoad:(progressDidFinishLoadBlock)finishBlock cancel:(progressDidCancelLoadBlock)cancelBlock;
+- (void)showPanelInView:(UIView *)view;
 
 + (ICProgressPanel *)sharedInstance;
 
@@ -41,5 +39,12 @@ typedef void(^progressDidCancelLoadBlock)(void);
 - (void)done;
 
 - (void)hide;
+
+@end
+
+@protocol ICProgressPanelDelegate <NSObject>
+
+- (void)progressPanelDidFinishLoad:(ICProgressPanel *)panel;
+- (void)progressPanelDidCancelLoad:(ICProgressPanel *)panel;
 
 @end
