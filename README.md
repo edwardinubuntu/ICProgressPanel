@@ -15,7 +15,7 @@ A panel displaying the current status, including uploading, cancel if needed, wa
 
 ## How To Use
 
-This compoment is written with BlocksKit, so need to add it to your library too.
+Just open ICProgressPanel.xcodeproj build and run!
 
 ## License
 
