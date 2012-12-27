@@ -8,7 +8,6 @@
 
 #import "ICDemoViewController.h"
 #import "ICProgressPanel.h"
-#import "UIControl+BlocksKit.h"
 
 @interface ICDemoViewController ()
 
@@ -62,32 +61,19 @@
   }];
 
   // Add panel in view
-  [ICProgressPanel showPanelInView:self.view didFinishLoad:nil cancel:^{
-    [tempProgressPanel hide];
-  }];
+  [[ICProgressPanel sharedInstance] showPanelInView:self.view];
+  [ICProgressPanel sharedInstance].delegate = self;
   // Hide for DEMO
   [[ICProgressPanel sharedInstance] hide];
 
   // Add event handler
-  [self.showButton addEventHandler:^(id sender) {
-    tempProgressPanel.percentage = 0.00;
-    [tempProgressPanel show];
-    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_UPLOADMANAGER_DID_START_LOADING object:[UIImage imageNamed:@"IMG_6682"]];
-  } forControlEvents:UIControlEventTouchUpInside];
+  [self.showButton addTarget:self action:@selector(show:) forControlEvents:UIControlEventTouchUpInside];
   
-  [self.progressSlider addEventHandler:^(id sender) {
-    UISlider *slider = (UISlider *)sender;
-    tempProgressPanel.percentage = slider.value;
-  } forControlEvents:UIControlEventValueChanged];
+  [self.progressSlider addTarget:self action:@selector(progressSlide:) forControlEvents:UIControlEventValueChanged];
   
-  [self.hideButton addEventHandler:^(id sender) {
-    [tempProgressPanel hide];
-  } forControlEvents:UIControlEventTouchUpInside];
+  [self.hideButton addTarget:self action:@selector(hide:) forControlEvents:UIControlEventTouchUpInside];
   
-  [self.finishButton addEventHandler:^(id sender) {
-    tempProgressPanel.percentage = 1;
-    [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_PHOTOS_UPLOAD_DONE object:nil];
-  } forControlEvents:UIControlEventTouchUpInside];
+  [self.finishButton addTarget:self action:@selector(finish:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -98,6 +84,34 @@
 - (void)didReceiveMemoryWarning {
   [super didReceiveMemoryWarning];
   // Dispose of any resources that can be recreated.
+}
+
+#pragma mark - private
+
+- (void)show:(id)sender {
+  [ICProgressPanel sharedInstance].percentage = 0.00;
+  [[ICProgressPanel sharedInstance] show];
+  [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_UPLOADMANAGER_DID_START_LOADING object:[UIImage imageNamed:@"IMG_6682"]];
+}
+
+- (void)progressSlide:(id)sender {
+  UISlider *slider = (UISlider *)sender;
+  [ICProgressPanel sharedInstance].percentage = slider.value;
+}
+
+- (void)hide:(id)sender {
+  [[ICProgressPanel sharedInstance] hide];
+}
+
+- (void)finish:(id)sender {
+  [ICProgressPanel sharedInstance].percentage = 1;
+  [[NSNotificationCenter defaultCenter] postNotificationName:kNOTIFICATION_PHOTOS_UPLOAD_DONE object:nil];
+}
+
+#pragma mark - ICProgressPanelDelegate
+
+- (void)progressPanelDidCancelLoad:(ICProgressPanel *)panel {
+  [panel hide];
 }
 
 @end
